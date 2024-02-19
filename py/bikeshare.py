@@ -147,6 +147,9 @@ def user_stats(df):
     count_user_type = df['User Type'].groupby(df['User Type']).count()
     print('The User Type count is   : \n',count_user_type)
 
+    ########################################################################
+    #       HANDLE ERROR FROM ABSENCE OF GENDER AND BIRTH YEAR             #
+    ########################################################################
     # TO DO: Display counts of gender
     while True:
         try:
@@ -171,7 +174,7 @@ def user_stats(df):
         except Exception:
             print('There is no Birth Year information in the database')
             break
-        
+  #################################################################################      
     print("\nThis took %s seconds." % round((time.time() - start_time),1)),
     print('-'*40)
     
