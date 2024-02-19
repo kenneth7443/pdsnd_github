@@ -39,11 +39,10 @@ The project is designed to **filter _US Bikeshare data_ and calculate the some s
 -*user_stats(df):* Displays statistics on bikeshare users.
 ```
 
-    
-
-
 ### Files used
-Include the files used
+-***chicago.csv***
+-***new_york_city.csv***
+-***washington.csv***
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
