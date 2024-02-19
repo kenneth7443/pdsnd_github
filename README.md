@@ -9,7 +9,7 @@ Include the date you created this project and README file.
 
 The project is designed to **filter _US Bikeshare data_ and calculate the some stats** using `functions`. The bikeshare.py file prompts the user if the want to see raw data. Below is the sample of the functions used.
 
-#### Function 'get_filters():'
+#### Function `get_filters():`
     """
     Asks user to specify a _city, month,_ and _day_ to analyze.
 
