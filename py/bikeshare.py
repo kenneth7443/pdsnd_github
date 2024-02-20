@@ -73,9 +73,8 @@ def load_data(city, month, day):
     if month != 'all':
         months = ['january','february','march','april','may','june']
         month = months.index(month) + 1
-        
         df = df[df['month'] == month]
-           
+        
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
         
@@ -147,6 +146,9 @@ def user_stats(df):
     count_user_type = df['User Type'].groupby(df['User Type']).count()
     print('The User Type count is   : \n',count_user_type)
 
+    ########################################################################
+    #       HANDLE ERROR FROM ABSENCE OF GENDER AND BIRTH YEAR             #
+    ########################################################################
     # TO DO: Display counts of gender
     while True:
         try:
@@ -171,7 +173,7 @@ def user_stats(df):
         except Exception:
             print('There is no Birth Year information in the database')
             break
-        
+  #################################################################################      
     print("\nThis took %s seconds." % round((time.time() - start_time),1)),
     print('-'*40)
     
@@ -191,8 +193,7 @@ def display_raw_data(df):
             break
         elif raw == 'yes':
             # TO DO: appropriately subset/slice your dataframe to display next five rows
-            print('\n')
-            print('*'*40)
+            print('\n','*'*40)
             print('Raw Data                       Page {}'.format(page))
             print('*'*40)
             print(df.iloc[i:i+5])
