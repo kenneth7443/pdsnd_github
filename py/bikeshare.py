@@ -194,8 +194,7 @@ def display_raw_data(df):
             break
         elif raw == 'yes':
             # TO DO: appropriately subset/slice your dataframe to display next five rows
-            print('\n')
-            print('*'*40)
+            print('\n','*'*40)
             print('Raw Data                       Page {}'.format(page))
             print('*'*40)
             print(df.iloc[i:i+5])
